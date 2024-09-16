@@ -24,9 +24,12 @@ class FormDataState extends State<FormData> {
         child: Column(
           children: [
             _textboxNama(),
+            SizedBox(height: 20),
             _textboxNIM(),
+            //SizedBox(height: 10),
             _textboxTahun(),
-            _tombolSimpan()
+            //SizedBox(height: 10),
+            _tombolSimpan(),
           ],
         ),
       ),
@@ -35,21 +38,33 @@ class FormDataState extends State<FormData> {
 
   _textboxNama() {
     return TextField(
-      decoration: const InputDecoration(labelText: "Nama"),
+      decoration: const InputDecoration(
+        labelText: "Nama",
+        border: OutlineInputBorder(),
+        ),
       controller: _namaController,
     );
   }
 
   _textboxNIM() {
     return TextField(
-      decoration: const InputDecoration(labelText: "NIM"),
+      decoration: const InputDecoration(
+        labelText: "NIM",
+        border: OutlineInputBorder()
+        ),
+      maxLength: 9,  
       controller: _nimController,
     );
   }
 
   _textboxTahun() {
     return TextField(
-      decoration: const InputDecoration(labelText: "Tahun Lahir"),
+      decoration: const InputDecoration(
+        labelText: "Tahun Lahir",
+        border: OutlineInputBorder()
+        ),
+      keyboardType: TextInputType.number,
+      maxLength: 4,
       controller: _tahunController,
     );
   }
