@@ -18,5 +18,6 @@ Shift Baru  : A
 
 ## Screenshot
 Contoh :
-![Lampiran Form](form.png)
-![Lampiran Hasil](hasil.png)
+
+![Lampiran Form](form.jpg)
+![Lampiran Hasil](hasil.jpg)
